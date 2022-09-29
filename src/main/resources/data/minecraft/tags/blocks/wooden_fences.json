@@ -1,0 +1,14 @@
+{ 
+	"replace": false,
+	"values": [ 
+		"vanillaadditions:onlyfence_acacia",
+		"vanillaadditions:onlyfence_birch",
+		"vanillaadditions:onlyfence_crimson",
+		"vanillaadditions:onlyfence_dark_oak",
+		"vanillaadditions:onlyfence_jungle",
+		"vanillaadditions:onlyfence_mangrove",
+		"vanillaadditions:onlyfence_oak",
+		"vanillaadditions:onlyfence_spruce",
+		"vanillaadditions:onlyfence_warped"
+	]
+}

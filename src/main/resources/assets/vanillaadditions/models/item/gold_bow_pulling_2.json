@@ -1,0 +1,6 @@
+{
+    "parent": "vanillaadditions:item/gold_bow",
+    "textures": {
+        "layer0": "vanillaadditions:item/gold_bow_pulling_2"
+    }
+}

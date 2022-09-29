@@ -1,0 +1,24 @@
+{ 
+	"type": "minecraft:crafting_shaped",
+	"pattern": [ 
+		" e ",
+		" s ",
+		" f "
+	
+	],
+	"key": { 
+		"e": { 
+			"item": "minecraft:fire_charge"
+		},
+		"s": {
+			"item": "minecraft:stick" 
+		},
+		"f": { 
+			"item": "minecraft:feather"
+		}
+	},
+	"result": { 
+		"item": "vanillaadditions:explosive_arrow",
+		"count": 4
+	}
+}

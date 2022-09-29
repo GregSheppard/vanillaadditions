@@ -1,0 +1,8 @@
+{ 
+	"replace": false,
+	"values": [ 
+		"vanillaadditions:experience_ore",
+		"vanillaadditions:deepslate_experience_ore",
+		"vanillaadditions:netherite_anvil"
+	]
+}

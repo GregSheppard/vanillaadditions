@@ -1,0 +1,10 @@
+{ 
+	"conditions": [ 
+		{ 
+			"condition": "forge:loot_table_id",
+			"loot_table_id": "minecraft:entities/elder_guardian"
+		}
+	],
+	"addition": "minecraft:cooked_beef",
+	"type": "vanillaadditions:add_loot_to_mob"
+}

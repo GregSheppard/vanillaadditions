@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_anvil",
+  "textures": {
+    "top": "vanillaadditions:block/netherite_anvil_top",
+    "body": "vanillaadditions:block/netherite_anvil"
+  }
+}

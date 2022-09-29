@@ -1,0 +1,7 @@
+{ 
+	"replace" : false,
+	"values" : [ 
+		"vanillaadditions:explosive_arrow",
+		"vanillaadditions:torch_arrow"
+	]
+}

@@ -1,0 +1,16 @@
+{
+    "itemGroup.vanillaadditions": "Vanilla Additions",
+
+    "item.vanillaadditions.test_item": "Test Item",
+    "item.vanillaadditions.gold_bow": "Gold Bow",
+    "item.vanillaadditions.steak_sandwich": "Steak Sandwich",
+    "item.vanillaadditions.explosive_arrow": "Explosive Arrow",
+    "item.vanillaadditions.torch_arrow": "Torch Arrow",
+    "block.vanillaadditions.experience_ore": "Experience Ore",
+    "block.vanillaadditions.netherite_anvil": "Netherite Anvil",
+    "block.vanillaadditions.onlyfence_oak": "Oak OnlyFence",
+    "enchantment.vanillaadditions.explosive": "Explosive",
+    "enchantment.vanillaadditions.lava_walker": "Lava Walker",
+    "enchantment.vanillaadditions.night_vision": "Night Vision",
+    "block.vanillaadditions.deepslate_experience_ore": "Deepslate Experience Ore"
+}
