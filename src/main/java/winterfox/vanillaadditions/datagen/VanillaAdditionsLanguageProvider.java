@@ -26,6 +26,8 @@ public class VanillaAdditionsLanguageProvider extends LanguageProvider {
 		this.addItem(ItemRegistry.TORCH_ARROW, "Torch Arrow");
 		this.addItem(ItemRegistry.HEMP, "Hemp");
 		this.addItem(ItemRegistry.HEMP_SEEDS, "Hemp Seeds");
+		this.addItem(ItemRegistry.HEMP_FIBRES, "Hemp Fibre");
+		this.addItem(ItemRegistry.ROPE, "Rope");
 
 		//Enchantments
 		this.addEnchantment(EnchantmentRegistry.EXPLOSIVE, "Explosive");

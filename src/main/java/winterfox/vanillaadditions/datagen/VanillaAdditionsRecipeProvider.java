@@ -34,7 +34,7 @@ public class VanillaAdditionsRecipeProvider extends RecipeProvider implements IC
                 .unlockedBy("has_netherite_block", inventoryTrigger(ItemPredicate.Builder.item().of(Items.NETHERITE_BLOCK).build()))
                 .save(finishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(ItemRegistry.TORCH_ARROW.get())
+        ShapedRecipeBuilder.shaped(ItemRegistry.TORCH_ARROW.get(), 4)
                 .define('F', Items.FEATHER)
                 .define('S', Items.STICK)
                 .define('C', Ingredient.of(Items.COAL, Items.CHARCOAL))
@@ -44,7 +44,7 @@ public class VanillaAdditionsRecipeProvider extends RecipeProvider implements IC
                 .unlockedBy("has_fuel", inventoryTrigger(ItemPredicate.Builder.item().of(Items.COAL, Items.CHARCOAL).build()))
                 .save(finishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(ItemRegistry.EXPLOSIVE_ARROW.get())
+        ShapedRecipeBuilder.shaped(ItemRegistry.EXPLOSIVE_ARROW.get(), 4)
                 .define('F', Items.FEATHER)
                 .define('S', Items.STICK)
                 .define('C', Items.FIRE_CHARGE)
@@ -74,11 +74,25 @@ public class VanillaAdditionsRecipeProvider extends RecipeProvider implements IC
                 .unlockedBy("has_leather", inventoryTrigger(ItemPredicate.Builder.item().of(Items.LEATHER).build()))
                 .save(finishedRecipeConsumer);
 
+        ShapedRecipeBuilder.shaped(ItemRegistry.ROPE.get(), 4)
+                .define('H', ItemRegistry.HEMP_FIBRES.get())
+                .pattern(" H ")
+                .pattern(" H ")
+                .pattern(" H ")
+                .unlockedBy("has_hemp_fibres", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.HEMP_FIBRES.get()).build()))
+                .save(finishedRecipeConsumer);
+
+
         //shapeless
         ShapelessRecipeBuilder.shapeless(ItemRegistry.STEAK_SANDWICH.get())
                 .requires(Items.BREAD)
                 .requires(Items.COOKED_BEEF)
                 .unlockedBy("has_bread", inventoryTrigger(ItemPredicate.Builder.item().of(Items.BREAD).build()))
+                .save(finishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(ItemRegistry.HEMP_FIBRES.get())
+                .requires(ItemRegistry.HEMP.get(), 2)
+                .unlockedBy("has_hemp", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegistry.HEMP.get()).build()))
                 .save(finishedRecipeConsumer);
     }
 }

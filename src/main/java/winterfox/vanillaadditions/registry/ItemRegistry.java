@@ -39,6 +39,12 @@ public class ItemRegistry {
 
 	public static final RegistryObject<Item> HEMP = ITEMS.register("hemp_string",
 			() -> new Item(new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)));
+
+	public static final RegistryObject<Item> HEMP_FIBRES = ITEMS.register("hemp_fibres",
+			() -> new Item(new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)));
+
+	public static final RegistryObject<Item> ROPE = ITEMS.register("hemp_rope",
+			() -> new Item(new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)));
 	
 	//creative mod tab for mod
 	public static class VanillaAdditionsCreativeTab extends CreativeModeTab {
