@@ -17,6 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 import winterfox.vanillaadditions.VanillaAdditions;
+import winterfox.vanillaadditions.block.HempCropBlock;
 import winterfox.vanillaadditions.block.NetheriteAnvil;
 import winterfox.vanillaadditions.block.OnlyFenceBlock;
 
@@ -53,7 +54,7 @@ public class BlockRegistry {
 			() -> new OnlyFenceBlock(Block.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD), Blocks.MANGROVE_FENCE));
 
 	public static final RegistryObject<Block> HEMP_CROP = BLOCKS.register("hemp",
-			() -> new CropBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().randomTicks().sound(SoundType.CROP)));
+			() -> new HempCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 	
 	@SubscribeEvent
 	public static void onRegisterItems(final RegisterEvent event) {
@@ -69,6 +70,7 @@ public class BlockRegistry {
 					add(ONLYFENCE_OAK.get());
 					add(ONLYFENCE_WARPED.get());
 					add(ONLYFENCE_DARK_OAK.get());
+					add(HEMP_CROP.get());
 				}
 			};
 			BLOCKS.getEntries().forEach((blockRegistryObject) -> {

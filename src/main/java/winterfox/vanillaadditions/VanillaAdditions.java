@@ -54,9 +54,9 @@ public class VanillaAdditions
     public static class ClientModEvents
     {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-        	VanillaAdditionsProperties.addProperties();
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            VanillaAdditionsProperties.addProperties();
+            VanillaAdditionsProperties.setRenderLayers();
         }
     }
 }

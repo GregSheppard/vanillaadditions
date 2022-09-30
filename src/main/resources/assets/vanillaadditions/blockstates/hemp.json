@@ -1,28 +1,25 @@
 {
   "variants": {
     "age=0": {
-      "model": "minecraft:block/wheat_stage0"
+      "model": "vanillaadditions:block/hemp_stage0"
     },
     "age=1": {
-      "model": "minecraft:block/wheat_stage1"
+      "model": "vanillaadditions:block/hemp_stage1"
     },
     "age=2": {
-      "model": "minecraft:block/wheat_stage2"
+      "model": "vanillaadditions:block/hemp_stage2"
     },
     "age=3": {
-      "model": "minecraft:block/wheat_stage3"
+      "model": "vanillaadditions:block/hemp_stage3"
     },
     "age=4": {
-      "model": "minecraft:block/wheat_stage4"
+      "model": "vanillaadditions:block/hemp_stage4"
     },
     "age=5": {
-      "model": "minecraft:block/wheat_stage5"
+      "model": "vanillaadditions:block/hemp_stage5"
     },
     "age=6": {
-      "model": "minecraft:block/wheat_stage6"
-    },
-    "age=7": {
-      "model": "minecraft:block/wheat_stage7"
+      "model": "vanillaadditions:block/hemp_stage6"
     }
   }
 }

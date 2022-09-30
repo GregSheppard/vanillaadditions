@@ -24,7 +24,7 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> GOLD_BOW = ITEMS.register("gold_bow", 
 			() -> new GoldBow(new Item.Properties().tab(VanillaAdditionsCreativeTab.instance).defaultDurability(150)));
 
-	public static final RegistryObject<Item> STEAK_SANDWHICH = ITEMS.register("steak_sandwich",
+	public static final RegistryObject<Item> STEAK_SANDWICH = ITEMS.register("steak_sandwich",
 			() -> new Item(new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)
 					.food(new FoodProperties.Builder().nutrition(10).saturationMod(15f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1.0f).build())));
 	
@@ -36,6 +36,9 @@ public class ItemRegistry {
 
 	public static final RegistryObject<Item> HEMP_SEEDS = ITEMS.register("hemp_seeds",
 			() -> new ItemNameBlockItem(BlockRegistry.HEMP_CROP.get(), new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)));
+
+	public static final RegistryObject<Item> HEMP = ITEMS.register("hemp_string",
+			() -> new Item(new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)));
 	
 	//creative mod tab for mod
 	public static class VanillaAdditionsCreativeTab extends CreativeModeTab {

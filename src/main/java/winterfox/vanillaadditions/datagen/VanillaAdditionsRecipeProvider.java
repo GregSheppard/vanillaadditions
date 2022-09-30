@@ -75,7 +75,7 @@ public class VanillaAdditionsRecipeProvider extends RecipeProvider implements IC
                 .save(finishedRecipeConsumer);
 
         //shapeless
-        ShapelessRecipeBuilder.shapeless(ItemRegistry.STEAK_SANDWHICH.get())
+        ShapelessRecipeBuilder.shapeless(ItemRegistry.STEAK_SANDWICH.get())
                 .requires(Items.BREAD)
                 .requires(Items.COOKED_BEEF)
                 .unlockedBy("has_bread", inventoryTrigger(ItemPredicate.Builder.item().of(Items.BREAD).build()))
