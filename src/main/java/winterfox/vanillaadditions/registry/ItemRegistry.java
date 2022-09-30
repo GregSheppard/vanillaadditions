@@ -5,6 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,6 +33,9 @@ public class ItemRegistry {
 	
 	public static final RegistryObject<Item> TORCH_ARROW = ITEMS.register("torch_arrow", 
 			() -> new TorchArrowItem(new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)));
+
+	public static final RegistryObject<Item> HEMP_SEEDS = ITEMS.register("hemp_seeds",
+			() -> new ItemNameBlockItem(BlockRegistry.HEMP_CROP.get(), new Item.Properties().tab(VanillaAdditionsCreativeTab.instance)));
 	
 	//creative mod tab for mod
 	public static class VanillaAdditionsCreativeTab extends CreativeModeTab {

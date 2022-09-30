@@ -18,5 +18,6 @@ public class VanillaAdditionsItemModelProvider extends ItemModelProvider {
         basicItem(ItemRegistry.TORCH_ARROW.get());
         basicItem(ItemRegistry.EXPLOSIVE_ARROW.get());
         basicItem(ItemRegistry.STEAK_SANDWHICH.get());
+        basicItem(ItemRegistry.HEMP_SEEDS.get());
     }
 }

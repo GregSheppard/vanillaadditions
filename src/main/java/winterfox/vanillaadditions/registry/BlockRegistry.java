@@ -7,10 +7,8 @@ import java.util.function.Supplier;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -53,7 +51,9 @@ public class BlockRegistry {
 			() -> new OnlyFenceBlock(Block.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD), Blocks.WARPED_FENCE));
 	public static final RegistryObject<Block> ONLYFENCE_MANGROVE = BLOCKS.register("onlyfence_mangrove", 
 			() -> new OnlyFenceBlock(Block.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD), Blocks.MANGROVE_FENCE));
-	
+
+	public static final RegistryObject<Block> HEMP_CROP = BLOCKS.register("hemp",
+			() -> new CropBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().randomTicks().sound(SoundType.CROP)));
 	
 	@SubscribeEvent
 	public static void onRegisterItems(final RegisterEvent event) {
